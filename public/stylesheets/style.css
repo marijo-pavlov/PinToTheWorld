@@ -1,0 +1,111 @@
+html{
+	height: 100%;
+}
+
+body {
+	padding-top: 50px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	height: 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+
+* { box-sizing: border-box; }
+
+#react-container {
+	height: 100%;
+}
+
+.wrapper{
+	height: 100%;
+}
+
+.homebg{
+	/* Free image on: https://www.pexels.com/photo/bare-tree-covered-with-snow-74602/ */
+	background: url('https://static.pexels.com/photos/74602/pexels-photo-74602.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+	text-align: center;
+	padding-top: 20%;
+	min-height: 100%;
+	margin: 0;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer,
+.grid-item { 
+	width: 50%; 
+}
+
+@media (min-width: 768px) {
+	.grid-sizer,
+	.grid-item { 
+		width: 33.33%; 
+	}
+}
+
+@media (min-width: 992px) {
+	.grid-sizer,
+	.grid-item { 
+		width: 25%; 
+	}
+}
+
+@media (min-width: 1200px) {
+	.grid-sizer,
+	.grid-item { 
+		width: 16.66%; 
+	}
+}
+
+.grid-item{
+	float: left;
+	position: relative;
+}
+
+.box{
+	padding-right: 5%;
+	padding-bottom: 5%;
+	width: 100%;
+}
+
+.box > img {
+	width: 100%;
+	height: auto;
+}
+
+.box > h4 {
+	background-color: rgba(0,116,217,0.4);
+	margin: 0;
+	padding: 5%;
+	color: white;
+}
+
+.overlay {
+	position: absolute;;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.pinIcon {
+	margin-left: 2.5%;
+	margin-top: 2.5%;
+	color: white;
+	font-size: 2em;
+	cursor: pointer;
+	transition: opacity 0.25s ease;
+	opacity: 0.4;
+}
+
+.pinIcon:hover{
+	opacity: 1;
+}
